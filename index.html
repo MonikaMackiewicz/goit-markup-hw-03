@@ -11,10 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="menu-nav container">
       <a href="./index.html" class="logo"
         >Web<span class="logo-1">Studio</span></a
       >
@@ -27,42 +31,46 @@
           <li><a href="/" class="menu-nav-link">Kontakt</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="info@example.com" class="link">info@example.com</a></li>
-        <li><a href="tel:+48111111111" class="link">+48 111 111 111</a></li>
-      </ul>
+      <div>
+        <ul class="header-links">
+          <li><a href="info@example.com" class="link">info@example.com</a></li>
+          <li><a href="tel:+48111111111" class="link">+48 111 111 111</a></li>
+        </ul>
+      </div>
     </header>
-    <section class="section-1">
-      <h1 class="h1">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-      <button class="button">Zamów usługe</button>
+    <section class="section-1 container">
+      <div class="h1-button">
+        <h1 class="h1">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+        <button class="button">Zamów usługe</button>
+      </div>
     </section>
     <main>
       <!--<h2> do schowania za pomocą css-->
       <h2>Przyjemnego dnia życzę</h2>
-      <section class="section-2">
-        <ul>
-          <li>
+      <section class="section-2 container">
+        <ul class="ul-display-1">
+          <li class="li-display">
             <h3 class="h3">LOREM IPSUM</h3>
             <p class="lorem">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="li-display">
             <h3 class="h3">LOREM IPSUM</h3>
             <p class="lorem">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="li-display">
             <h3 class="h3">LOREM IPSUM</h3>
             <p class="lorem">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="li-display">
             <h3 class="h3">LOREM IPSUM</h3>
             <p class="lorem">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -71,27 +79,30 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="container">
         <h2 class="h2-font">Czym się zajmujemy</h2>
-        <ul>
-          <li>
+        <ul class="ul-display-2">
+          <li class="li-display-2">
             <img
+              class="foto"
               src="./images/box1.jpg"
               alt="Tworzenie strony internetowej"
               width="370"
               height="294"
             />
           </li>
-          <li>
+          <li class="li-display-2">
             <img
+              class="foto"
               src="./images/box2.jpg"
               alt="Dostosowywanie strony dla użytkowników mobilnych"
               width="370"
               height="294"
             />
           </li>
-          <li>
+          <li class="li-display-2">
             <img
+              class="foto"
               src="./images/box3.jpg"
               alt="Tabela kodów kolorów html"
               width="370"
@@ -100,53 +111,59 @@
           </li>
         </ul>
       </section>
-      <section class="section-4">
+      <section class="section-4 container">
         <h2 class="h2-font">Nasz zespół</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/teamcard1.jpg"
-              alt="John Doe Product Designer"
-              width="270"
-              height="260"
-            />
-            <h3 class="we">John Doe</h3>
-            <p class="we-work">Product Designer</p>
-          </li>
-          <li>
-            <img
-              src="./images/teamcard2.jpg"
-              alt="John Doe Frontend Developer"
-              width="270"
-              height="260"
-            />
-            <h3 class="we">John Doe</h3>
-            <p class="we-work">Frontend Developer</p>
-          </li>
-          <li>
-            <img
-              src="./images/teamcard3.jpg"
-              alt="John Doe Marketing"
-              width="270"
-              height="260"
-            />
-            <h3 class="we">John Doe</h3>
-            <p class="we-work">Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images/teamcard4.jpg"
-              alt="John Doe UI Designer"
-              width="270"
-              height="260"
-            />
-            <h3 class="we">John Doe</h3>
-            <p class="we-work">UI Designer</p>
-          </li>
-        </ul>
+        <div class="we-container">
+          <ul class="ul-display-2">
+            <li>
+              <img
+                class="foto"
+                src="./images/teamcard1.jpg"
+                alt="John Doe Product Designer"
+                width="270"
+                height="260"
+              />
+              <h3 class="we">John Doe</h3>
+              <p class="we-work">Product Designer</p>
+            </li>
+            <li>
+              <img
+                class="foto"
+                src="./images/teamcard2.jpg"
+                alt="John Doe Frontend Developer"
+                width="270"
+                height="260"
+              />
+              <h3 class="we">John Doe</h3>
+              <p class="we-work">Frontend Developer</p>
+            </li>
+            <li>
+              <img
+                class="foto"
+                src="./images/teamcard3.jpg"
+                alt="John Doe Marketing"
+                width="270"
+                height="260"
+              />
+              <h3 class="we">John Doe</h3>
+              <p class="we-work">Marketing</p>
+            </li>
+            <li>
+              <img
+                class="foto"
+                src="./images/teamcard4.jpg"
+                alt="John Doe UI Designer"
+                width="270"
+                height="260"
+              />
+              <h3 class="we">John Doe</h3>
+              <p class="we-work">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <a href="./index.html" class="logo"
         >Web<span class="logo-2"> Studio</span></a
       >
