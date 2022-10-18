@@ -30,7 +30,8 @@ body {
 .menu-nav-txt {
   display: flex;
   flex-grow: 1;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 46px;
 }
 
 .menu-nav-link {
@@ -49,7 +50,8 @@ body {
 
 .header-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 50px;
 }
 
 ul {
@@ -79,6 +81,7 @@ ul {
 .h1-button {
   align-items: center;
 }
+
 .button {
   background: var(--accent-color);
   color: var(--background);
@@ -137,11 +140,6 @@ ul {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-
-.li-display-2 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   gap: 30px;
 }
 
@@ -161,6 +159,12 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   color: var(--less-i-tex);
+  letter-spacing: 0.03em;
+}
+
+.h2 {
+  display: inline;
+  justify-content: center;
 }
 
 .h2-font {
@@ -168,14 +172,11 @@ ul {
   line-height: 1.17;
   font-weight: 700;
   color: var(--main-color);
-  width: 1170px;
-  height: 386px;
 }
 
 .section-4 {
   background: #f5f4fa;
-  width: 1600px;
-  height: 648px;
+  padding-bottom: 94px;
 }
 
 .we-container {
@@ -202,7 +203,8 @@ ul {
   width: 1600px;
   height: 252px;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 60px;
 }
 
 .logo {
@@ -226,11 +228,24 @@ ul {
 .logo:visited {
   color: var(--accent-color);
 }
+
+.footer-address {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .address {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
   color: #ffffff;
+  display: flex;
+}
+
+.ul-button {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 .portfolio-button {
@@ -244,15 +259,27 @@ ul {
   color: #ffffff;
 }
 
+.ul-main-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.li-main-portfolio {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
 .portfolio-h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   color: var(--main-color);
+  letter-spacing: 0.06em;
 }
 
 .portfolio-p {
   font-size: 16px;
   line-height: 1.86;
   color: var(--less-i-tex);
+  letter-spacing: 0.03em;
 }
