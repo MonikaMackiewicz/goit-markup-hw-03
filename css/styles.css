@@ -20,11 +20,19 @@ body {
   margin: 0 auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .menu-nav {
+  border-bottom: 1px solid #ececec;
+  padding: 0 15px 25px 15px;
+}
+
+.in-container {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #ececec;
-  padding: 0 15px 0 15px;
+  align-items: center;
 }
 
 .menu-nav-txt {
@@ -73,13 +81,8 @@ ul {
   font-family: inherit;
   text-transform: uppercase;
   color: var(--background);
-  padding-top: 200px;
-  padding-bottom: 30px;
   margin: 0;
-}
-
-.h1-button {
-  align-items: center;
+  padding-bottom: 30px;
 }
 
 .button {
@@ -91,8 +94,6 @@ ul {
   line-height: 1.86;
   cursor: pointer;
   letter-spacing: 0.06em;
-  display: inline;
-  margin-bottom: 200px;
 }
 
 .button:hover,
@@ -122,12 +123,9 @@ ul {
 }
 
 .section-2 {
-  width: 1170px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .ul-display-1 {
@@ -147,7 +145,6 @@ ul {
   align-items: flex-start;
   justify-content: space-between;
   gap: 30px;
-  padding-bottom: 94px;
   padding-left: 0;
 }
 
@@ -170,19 +167,14 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.h2 {
-  display: flex;
-  justify-content: center;
-}
-
 .h2-font {
   font-size: 36px;
   line-height: 1.17;
   font-weight: 700;
   color: var(--main-color);
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
 }
 
 .section-4 {
@@ -216,7 +208,6 @@ ul {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  display: block;
 }
 
 .logo {
@@ -227,7 +218,6 @@ ul {
   text-decoration: none;
   color: var(--accent-color);
   letter-spacing: 0.03em;
-  display: block;
 }
 
 .logo-1 {
@@ -243,7 +233,6 @@ ul {
 }
 
 .footer-logo {
-  display: block;
   padding-bottom: 20px;
 }
 
@@ -252,25 +241,17 @@ ul {
   line-height: 1.71;
   font-style: normal;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 .ul-button {
-  display: flex;
   gap: 30px;
-  padding-bottom: 50px;
-  padding-top: 94px;
-}
-
-.portfolio-button-section {
   display: flex;
-  justify-content: center;
-  text-align: center;
 }
-
 .portfolio-button {
   background: #f5f4fa;
   cursor: pointer;
-  display: inline;
 }
 
 .portfolio-button:hover,
