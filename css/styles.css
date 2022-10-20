@@ -263,7 +263,7 @@ ul {
 .ul-main-portfolio {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 24px;
   padding: 0;
   margin: 0;
 }
@@ -287,4 +287,8 @@ ul {
   color: var(--less-i-tex);
   letter-spacing: 0.03em;
   margin: 0;
+}
+
+.ul-main-portfolio > li:nth-child(n + 7) {
+  border: 1px solid #eeeeee;
 }
