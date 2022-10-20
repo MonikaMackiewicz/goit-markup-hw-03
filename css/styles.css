@@ -241,8 +241,12 @@ ul {
   line-height: 1.71;
   font-style: normal;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
+  letter-spacing: 0.03em;
+}
+
+.address > ul {
+  padding: 0;
+  margin: 0;
 }
 
 .ul-button {
