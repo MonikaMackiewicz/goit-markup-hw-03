@@ -6,6 +6,11 @@
   --portfolio-button: #f5f4fa;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color);
@@ -25,15 +30,27 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .menu-nav {
   border-bottom: 1px solid #ececec;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
 }
 
 .header-link {
-   display: flex;
+  display: flex;
   align-items: center;
   padding: 0;
   flex-grow: 0;
@@ -49,7 +66,6 @@ body {
   gap: 50px;
   flex-grow: 0;
   justify-content: flex-end;
-
 }
 .menu-nav-link {
   text-decoration: none;
@@ -74,6 +90,7 @@ ul {
   display: flex;
   justify-content: center;
   text-align: center;
+  padding: 200px 0;
 }
 
 .h1 {
@@ -86,6 +103,7 @@ ul {
   color: var(--background);
   margin: 0;
   padding-bottom: 30px;
+  max-width: 696px;
 }
 
 .button {
@@ -97,6 +115,8 @@ ul {
   line-height: 1.86;
   cursor: pointer;
   letter-spacing: 0.06em;
+  border: 0;
+  padding: 10px 41px 10px 42px;
 }
 
 .button:hover,
@@ -133,8 +153,7 @@ ul {
 
 .ul-display-1 {
   display: flex;
-  flex-wrap: wrap;
-  gap: calc(20px / 3);
+  gap: 30px;
   padding: 0;
 }
 
@@ -161,6 +180,7 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-color);
+  padding-bottom: 10px;
 }
 
 .lorem {
@@ -197,6 +217,7 @@ ul {
   color: var(--main-color);
   display: flex;
   justify-content: center;
+  padding-top: 30px;
 }
 
 .we-work {
@@ -205,6 +226,8 @@ ul {
   color: var(--less-i-tex);
   display: flex;
   justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .footer {
@@ -250,7 +273,7 @@ ul {
 
 .address > ul {
   padding: 0;
-  margin: 0;
+  margin: 9 0 0 0;
 }
 
 .ul-button {
@@ -258,16 +281,22 @@ ul {
   align-content: center;
   justify-content: center;
   gap: 8px;
-  width: 1170px;
+  width: 100%;
   padding-top: 94px;
   margin: 0;
 }
 
 .portfolio-button {
-  background: var(--portfolio-button)
+  color: var(--main-color);
+  background: var(--portfolio-button);
   border-radius: 4px;
   border-color: var(--portfolio-button);
   cursor: pointer;
+  font-weight: 500;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
 }
 
 .portfolio-button:hover,
@@ -282,6 +311,12 @@ ul {
   gap: 24px;
   padding: 0;
   margin: 0;
+}
+
+.border-main-portfolio {
+  background: var(--background);
+  border: 1px solid #eeeeee;
+  border-top: 0;
 }
 
 .li-main-portfolio {
@@ -303,8 +338,4 @@ ul {
   color: var(--less-i-tex);
   letter-spacing: 0.03em;
   margin: 0;
-}
-
-.ul-main-portfolio > li:nth-child(n + 7) {
-  border: 1px solid #eeeeee;
 }
